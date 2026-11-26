@@ -179,10 +179,53 @@ footer{font-size:13px;color:var(--mut)}
 @media(prefers-reduced-motion:no-preference){.track i{transition:width .45s ease}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.qn,.presets,.fx,#copy,textarea{display:none!important}.band{padding:14px}}
+/* course */
+.clegend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13.5px;margin:8px 0 14px}
+.k{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:5px}
+.k.c,.it.c{background:#ece6d8;color:#3a3326}.k.a,.it.a{background:#d6ecea;color:#0b4a4e}.k.b,.it.b{background:#fbdcd3;color:#8e2a15}
+.k.o{background:#fff;border:2px dashed #d9482b}.k.m{background:#5a5348}.k.s{background:#f2b134}
+.it.o{background:transparent;border:1.5px dashed #d9482b;color:#a8321b}.it.m{background:#5a5348;color:#fff}.it.s{background:#fbe6a8;color:#5a3d00}
+.it.f{background:#e7e3f4;color:#3b2f6b}
+.daytabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.daytabs::-webkit-scrollbar{display:none}
+.daytabs button{flex:1 0 auto;font:700 15px "Noto Sans KR",sans-serif;min-height:52px;padding:6px 14px;border-radius:12px;border:2px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;line-height:1.2}
+.daytabs button small{display:block;font-weight:500;font-size:12px;color:var(--mut)}
+.daytabs button[aria-selected=true]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.daytabs button[aria-selected=true] small{color:var(--bg);opacity:.8}
+.dcard{background:var(--paper);border:1px solid var(--line);border-radius:16px;margin-top:12px;overflow:hidden}
+.dhead{display:grid;grid-template-columns:70px minmax(0,1fr) minmax(0,1fr);align-items:stretch}
+.dhead .dn{background:var(--ink);color:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px 4px}
+.dhead .dn b{font:400 22px "Black Han Sans",sans-serif;line-height:1}.dhead .dn small{font-size:12px;opacity:.85}
+.dhead .ta,.dhead .tb{padding:10px 12px;color:#fff}
+.dhead .ta{background:#0e5e63}.dhead .tb{background:#c23d22}
+.dhead small{display:block;font-size:12px;opacity:.85}.dhead strong{font-size:15.5px;line-height:1.3;display:block}
+.drow{display:grid;grid-template-columns:70px minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--line)}
+.drow .tl{padding:10px 6px;font-size:13px;font-weight:700;color:var(--mut);text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:var(--bg)}
+.drow .tl em{font-style:normal;font-size:11px;font-weight:700;padding:1px 6px;border-radius:99px}
+.drow .tl em.same{background:#ece6d8;color:#3a3326}.drow .tl em.dif{background:var(--ink);color:var(--bg)}
+.drow .ca,.drow .cb{padding:8px 10px;display:flex;flex-wrap:wrap;gap:5px;align-content:flex-start}
+.drow .ca{border-right:1px dashed var(--line)}
+.drow.isdif .ca,.drow.isdif .cb{background:rgba(242,177,52,.06)}
+.it{display:inline-block;font-size:14px;line-height:1.35;padding:5px 9px;border-radius:8px}
+.it small{display:block;font-size:11.5px;opacity:.8}
+.ddiff{padding:12px 14px;border-top:2px solid var(--ink);font-size:15px;background:var(--bg)}
+.ddiff b{color:var(--B)}
+.linkbtn{font:700 14px "Noto Sans KR",sans-serif;background:none;border:0;color:var(--A);text-decoration:underline;cursor:pointer;min-height:44px}
+@media(max-width:640px){.dhead,.drow{grid-template-columns:46px minmax(0,1fr) minmax(0,1fr)}.drow .tl{font-size:12px;padding:8px 2px}.it{font-size:13px;padding:4px 7px}.drow .ca,.drow .cb{padding:6px}.dhead .ta,.dhead .tb{padding:8px}.dhead strong{font-size:14px}}
+.maps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.mapfig{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:12px}
+.mapfig figcaption{font-weight:900;font-size:15.5px;margin-bottom:4px}
+.mapfig svg{width:100%;height:auto;display:block}
+.venn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.vc{border-radius:14px;padding:14px 16px}
+.vc.a{background:#d6ecea;color:#0b3b3f}.vc.c{background:#ece6d8;color:#2b261c}.vc.b{background:#fbdcd3;color:#6d200f}
+.vc h3{font-family:"Noto Serif KR",serif;margin-bottom:6px}.vc h4{margin:12px 0 4px;font-size:14px}
+.vc ul{margin:0;padding-left:18px;font-size:14.5px}.vc li{margin:3px 0}
+@media(max-width:760px){.maps,.venn{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<nav class="qn" aria-label="섹션 바로가기"><a href="#choose" class="home">★ 30초 결정</a><a href="#cost">1인 비용</a><a href="#days">일정 비교</a><a href="#boats">호이안 배 3종</a><a href="#table">항목 비교</a><a href="#pc">장단점</a><a href="#decide">결정 가이드</a><a href="#ask">예약 전 확인</a><a href="#share">단톡방 공유</a><a href="#pdf">PDF 원본</a><a href="all-products.html" style="color:var(--mut);font-weight:500">참고: 처음 본 14개</a></nav>
+<nav class="qn" aria-label="섹션 바로가기"><a href="#course" class="home">★ 날짜별 코스</a><a href="#diff">코스 차이</a><a href="#choose">30초 결정</a><a href="#cost">1인 비용</a><a href="#boats">호이안 배 3종</a><a href="#table">항목 비교</a><a href="#pc">장단점</a><a href="#decide">결정 가이드</a><a href="#ask">예약 전 확인</a><a href="#share">단톡방 공유</a><a href="#pdf">PDF 원본</a><a href="all-products.html" style="color:var(--mut);font-weight:500">참고: 처음 본 14개</a></nav>
 
 <header class="band hero"><div class="wrap">
 <span class="final2">최종 후보 2개 · 이 중에서 고릅니다</span>
@@ -190,8 +233,8 @@ footer{font-size:13px;color:var(--mut)}
 <h1>같은 날, 같은 비행기.<br><em>무엇을 보러 갈지</em>가 답을 정합니다</h1>
 <p class="lead">두 상품은 출발일과 비행편(비엣젯 VJ989/988)까지 같습니다. 다른 것은 코스입니다. 모두투어는 <b>다낭·호이안·바나힐을 다 포함한 편한 여행</b>이고, 하나투어는 <b>후에 역사 투어를 넣은 대신 옵션과 가이드경비가 별도인 여행</b>입니다.</p>
 <div class="passes">
- <div class="pass a"><div class="main"><div class="co">모두투어 · BVP108VJ51</div><div class="nm">노팁/노옵션 다낭·호이안·바나힐 5일</div><div class="route">PUS → DAD</div><div class="sub">다낭 3박 같은 호텔 · 옵션 없음 · 쇼핑 3회</div><a class="go" href="#pc">장단점 보기 →</a></div><div class="stub"><small>1인 최종</small><b id="sa">669,900원</b><small>현지 추가 0원</small></div></div>
- <div class="pass b"><div class="main"><div class="co">하나투어 · AVP331270112VJF</div><div class="nm">하나팩 세이브 다낭·호이안·후에 5일</div><div class="route">PUS → DAD·HUE</div><div class="sub">다낭 2박 + 후에 1박 · 옵션 있음 · 쇼핑 3회</div><a class="go" href="#pc">장단점 보기 →</a></div><div class="stub"><small>1인 최종</small><b id="sb">593,644원</b><small id="sbs">필수만 기준</small></div></div>
+ <div class="pass a"><div class="main"><div class="co">모두투어 · BVP108VJ51</div><div class="nm">노팁/노옵션 다낭·호이안·바나힐 5일</div><div class="route">PUS → DAD</div><div class="sub">다낭 3박 같은 호텔 · 옵션 없음 · 쇼핑 3회</div><a class="go" href="#course">날짜별 코스 보기 →</a></div><div class="stub"><small>1인 최종</small><b id="sa">669,900원</b><small>현지 추가 0원</small></div></div>
+ <div class="pass b"><div class="main"><div class="co">하나투어 · AVP331270112VJF</div><div class="nm">하나팩 세이브 다낭·호이안·후에 5일</div><div class="route">PUS → DAD·HUE</div><div class="sub">다낭 2박 + 후에 1박 · 옵션 있음 · 쇼핑 3회</div><a class="go" href="#course">날짜별 코스 보기 →</a></div><div class="stub"><small>1인 최종</small><b id="sb">593,644원</b><small id="sbs">필수만 기준</small></div></div>
 </div>
 <div class="verdict" id="verdict"></div>
 <div class="prop" aria-live="polite">
@@ -201,6 +244,38 @@ footer{font-size:13px;color:var(--mut)}
 </div>
 <div class="pdfbtns"><a class="pdfbtn a" href="pdf/modetour-BVP108VJ51-0112.pdf" target="_blank" rel="noopener">모두투어 원본 PDF 열기 (10MB)</a><a class="pdfbtn b" href="pdf/hanatour-AVP331270112VJF-0112.pdf" target="_blank" rel="noopener">하나투어 원본 PDF 열기 (19MB)</a></div>
 </div></header>
+
+<section class="band" id="course"><div class="wrap">
+<span class="kicker">날짜별 코스 비교</span>
+<h2>같은 날, 두 상품은 어디에 있나</h2>
+<p class="note">시간대별로 한 줄씩 맞춰 나란히 놓았습니다. 색으로 차이를 구분합니다. 순서는 현지 사정에 따라 바뀔 수 있습니다.</p>
+<div class="clegend">
+ <span><i class="k c"></i>두 상품 공통</span>
+ <span><i class="k a"></i>모두투어에만 있음</span>
+ <span><i class="k b"></i>하나투어에만 있음</span>
+ <span><i class="k o"></i>하나투어 유료 옵션</span>
+ <span><i class="k m"></i>장거리 이동</span>
+ <span><i class="k s"></i>쇼핑</span>
+</div>
+<div class="daytabs" role="tablist" aria-label="날짜 선택" id="daytabs"></div>
+<div id="dayview"></div>
+<p class="note" style="margin-top:10px">한 번에 보기: <button type="button" class="linkbtn" id="showall">5일 전체 펼치기</button></p>
+</div></section>
+
+<section class="band" id="diff" style="padding-top:0"><div class="wrap">
+<span class="kicker">코스 차이 한눈에</span>
+<h2>어디가 같고 어디가 다른가</h2>
+<div class="maps">
+ <figure class="mapfig"><figcaption style="color:var(--A)">모두투어 동선 · 다낭에서 3박</figcaption><svg viewBox="0 0 420 330" id="mapA" role="img" aria-label="모두투어 동선: 다낭을 기점으로 2일차 호이안, 3일차 바나힐 왕복"></svg></figure>
+ <figure class="mapfig"><figcaption style="color:var(--B)">하나투어 동선 · 다낭 2박 + 후에 1박</figcaption><svg viewBox="0 0 420 330" id="mapB" role="img" aria-label="하나투어 동선: 다낭을 기점으로 2일차 호이안 왕복, 3일차 후에로 이동해 1박, 4일차 다낭 복귀"></svg></figure>
+</div>
+<p class="note">개략도입니다. 위치와 거리는 단순화했고, 이동 시간은 PDF 표기값입니다(호이안 약 40분, 후에 편도 약 3시간).</p>
+<div class="venn">
+ <div class="vc a"><h3>모두투어에만</h3><ul id="onlyA"></ul></div>
+ <div class="vc c"><h3>두 상품 공통</h3><ul id="both"></ul></div>
+ <div class="vc b"><h3>하나투어에만</h3><ul id="onlyB"></ul><h4>하나투어에선 유료 (모두투어는 포함)</h4><ul id="paidB"></ul></div>
+</div>
+</div></section>
 
 <section class="band" id="choose"><div class="wrap">
 <span class="kicker">30초 결정</span>
@@ -257,14 +332,6 @@ footer{font-size:13px;color:var(--mut)}
  <p class="note">차이 = 하나투어 − 모두투어. 마이너스면 하나투어가 쌉니다. 4명 합계는 1인 금액 × 4입니다.</p>
 </div>
 </div>
-</div></section>
-
-<section class="band" id="days" style="padding-top:0"><div class="wrap">
-<span class="kicker">일정 비교</span>
-<h2>하루씩 나란히 보기</h2>
-<p class="note"><span class="inc">초록</span>은 포함, <span class="opt">주홍</span>은 현지에서 돈을 내는 선택관광입니다. 순서는 현지 사정에 따라 바뀔 수 있습니다.</p>
-<div class="dayhead"><span></span><span>모두투어</span><span>하나투어</span></div>
-<div class="days" id="daylist"></div>
 </div></section>
 
 <section class="band" id="boats" style="padding-top:0"><div class="wrap">
@@ -427,23 +494,6 @@ $('#fx').addEventListener('input',draw);
 $('#fx').addEventListener('change',()=>{if(String(fx())!==$('#fx').value)$('#fx').value=fx();draw();});
 $('#copy').onclick=async()=>{try{await navigator.clipboard.writeText($('#out').value);$('#cmsg').textContent='복사됨';}catch(e){$('#out').focus();$('#out').select();$('#cmsg').textContent='아래 글을 길게 눌러 복사하세요';}};
 
-const DAYS=[
- ['1일','1/12 화',
-  {t:['김해공항 개별 수속 (출발 3시간 전, 05:30까지)','08:30 출발 → 11:00 다낭 도착, 현지인 가이드 미팅','미케비치 자유시간 (음료 1잔)','호텔 체크인 후 휴식'],m:'중식 현지식 또는 한식 · 석식 현지식 또는 한식'},
-  {t:['06:00 김해공항 국제선 3층 하나투어 안내판 앞 미팅','08:30 출발 → 11:00 다낭 도착, 공항 밖에서 현지 투어매니저 미팅','참 조각 박물관','APEC 공원','다낭 호텔 (그랜드투란·윈덤 골든베이·더 나로드 중)'],m:'중식 현지식 · 석식 한식'}],
- ['2일','1/13 수',
-  {t:['<span class="inc">전신마사지 2시간</span>','마블마운틴','호이안 투본강 목선·도자기마을','호이안 구시가지 (내원교·광조회관·풍흥의 집·떤끼의 집)','<span class="inc">바구니배</span>','<span class="inc">야간 시티투어</span> (소원등·야시장·음료, 소원배 탑승 없음)','<span class="inc">씨클로</span>'],m:'중식 소불고기 · 석식 호이안 전통식'},
-  {t:['오전 자유 (가이드 동행 없음)','마블마운틴 (<span class="inc">올라갈 때 엘리베이터</span>)','호이안 투본강 목선·도자기마을','호이안 구시가지 (내원교·광조회관·턴키의 집·풍흥의 집)','<span class="opt">바구니배 $30</span>','<span class="opt">야경투어 $30</span> (소원배·소원등·야시장·음료)','<span class="opt">씨클로 $20</span>'],m:'중식 현지식(한식) · 석식 호이안 가정식 세트'}],
- ['3일','1/14 목',
-  {t:['<span class="inc">바나힐 테마파크</span> (세계 최장 케이블카·골든브릿지)','APEC 조각공원','선짜 야시장','반미 간식'],m:'중식 퓨전 뷔페 · 석식 르가든 한상(소낙전골)'},
-  {t:['다낭 → 후에 이동 (약 3시간)','후에 왕궁 (<span class="inc">전동카 포함</span>)','티엔무 파고다','동바 시장','<span class="opt">드래곤보트 $20</span> · <span class="opt">2층버스 시티투어 $40</span> · <span class="opt">시내 전동카 $20</span>','후에 호텔 (멜리아 빈펄 휴 또는 인도차인 팰리스)'],m:'중식 현지식 · 석식 후에 전통 궁중식'}],
- ['4일','1/15 금',
-  {t:['오전 호텔 부대시설 이용·체크아웃','쇼핑센터 3회 (각 약 60분)','영흥사(손짜)·다낭대성당(외부)·한시장','미케비치 자유시간 또는 티타임','<span class="inc">한강유람선</span>','공항 이동'],m:'중식 쌀국수+월남쌈 · 석식 삼겹살'},
-  {t:['후에 호텔 체크아웃','카이딘 왕릉','민망 황제릉','후에 → 다낭 이동 (약 3시간)','쇼핑 3회 (약 2시간 30분~3시간)','공항 이동 — 일정 중 가장 빡빡한 날'],m:'중식 현지식 · 석식 무제한 삼겹살'}],
- ['5일','1/16 토',
-  {t:['00:30 다낭 출발 → 06:50 김해 도착'],m:'기내식 불포함'},
-  {t:['00:30 다낭 출발 → 06:50 김해 도착'],m:'기내식 불포함'}]];
-$('#daylist').innerHTML=DAYS.map(([d,dt,a,b])=>`<div class="day"><div class="d"><b>${d}</b><small>${dt}</small></div><div class="c a"><h4>모두투어</h4><ul>${a.t.map(x=>`<li>${x}</li>`).join('')}</ul><div class="meal">🍽 ${a.m}</div></div><div class="c b"><h4>하나투어</h4><ul>${b.t.map(x=>`<li>${x}</li>`).join('')}</ul><div class="meal">🍽 ${b.m}</div></div></div>`).join('');
 
 const W=s=>`<span class="win">${s}</span>`;
 const ROWS=[
@@ -523,6 +573,66 @@ let myv='';
 document.querySelectorAll('.vote .seg button').forEach(b=>b.onclick=()=>{myv=b.dataset.v;document.querySelectorAll('.vote .seg button').forEach(x=>x.setAttribute('aria-pressed',x===b));});
 $('#vcopy').onclick=async()=>{if(!myv){$('#vmsg').textContent='먼저 모두투어·하나투어 중 하나를 누르세요';return;}const nm=$('#vname').value.trim()||'이름없음';const txt=`[다낭 최종 선택] ${nm}: ${myv==='A'?'모두투어 BVP108VJ51 (669,900원)':'하나투어 AVP331270112VJF (539,900원+옵션)'}`;try{await navigator.clipboard.writeText(txt);$('#vmsg').textContent='복사됨: '+txt;}catch(e){$('#vmsg').textContent='이 글을 복사하세요 → '+txt;}};
 $('#tbtn').onclick=()=>{const L=($('#tin').value.match(/\[다낭 최종 선택\][^\n]*/g)||[]);const seen={};L.forEach(l=>{const m=l.match(/\]\s*([^:]+):\s*(모두투어|하나투어)/);if(m)seen[m[1].trim()]=m[2];});const v=Object.values(seen),a=v.filter(x=>x==='모두투어').length,b=v.length-a;$('#tout').innerHTML=v.length?`${v.length}명 · <span style="color:var(--A)">모두투어 ${a}표</span> · <span style="color:var(--B)">하나투어 ${b}표</span>${a===b?' → 동점, 비용 계산기와 장단점으로 다시 논의':a>b?' → 모두투어':' → 하나투어'}`:'읽을 수 있는 선택이 없습니다. "선택 복사" 글을 그대로 붙여 넣으세요.';};
+const I=(k,t,s)=>`<span class="it ${k}">${t}${s?`<small>${s}</small>`:''}</span>`;
+const CD=[
+ {d:'1일',dt:'1/12 화',ta:'도착 · 미케비치 해변',tb:'도착 · 참 조각 박물관·APEC',rows:[
+  ['출국',[I('a','김해 개별 수속','05:30까지 (출발 3시간 전)')],[I('b','김해 국제선 3층 미팅','06:00 하나투어 안내판')]],
+  ['오전',[I('c','08:30 출발 → 11:00 다낭')],[I('c','08:30 출발 → 11:00 다낭')],1],
+  ['점심',[I('c','현지식 또는 한식')],[I('c','현지식')],1],
+  ['오후',[I('a','미케비치 자유시간','음료 1잔')],[I('b','참 조각 박물관'),I('c','APEC 공원','모두투어는 3일차')]],
+  ['저녁',[I('c','현지식 또는 한식')],[I('c','현지식(한식)')],1],
+  ['숙소',[I('c','다낭 5성 예정','3박 같은 호텔')],[I('c','다낭 5성 예정','2박')],1]],
+  diff:'둘 다 가벼운 첫날. <b>모두투어는 해변 자유시간</b>, <b>하나투어는 박물관·공원 관광</b>입니다.'},
+ {d:'2일',dt:'1/13 수',ta:'호이안 (체험 모두 포함)',tb:'호이안 (체험은 유료)',rows:[
+  ['오전',[I('a','전신마사지 120분','팁 $4')],[I('b','호텔 자유시간','가이드 동행 없음')]],
+  ['점심',[I('c','소불고기')],[I('c','현지식(한식)')],1],
+  ['오후',[I('c','마블마운틴'),I('c','투본강 목선·도자기마을'),I('c','호이안 구시가지','내원교·광조회관·풍흥의 집·떤끼의 집'),I('a','바구니배')],[I('c','마블마운틴','올라갈 때 엘리베이터'),I('c','투본강 목선·도자기마을'),I('c','호이안 구시가지','내원교·광조회관·풍흥의 집·턴키의 집'),I('o','바구니배 $30')]],
+  ['저녁',[I('c','호이안 전통식')],[I('c','호이안 가정식 세트')],1],
+  ['밤',[I('a','야경투어','강변 소원등·야시장·음료'),I('a','씨클로')],[I('o','야경투어 $30','소원배 탑승·소원등·야시장·음료'),I('o','씨클로 $20')]],
+  ['숙소',[I('c','다낭 같은 호텔')],[I('c','다낭 같은 호텔')],1]],
+  diff:'코스는 거의 같습니다. 차이는 <b>오전</b>(마사지 vs 자유시간)과 <b>호이안 체험 3개의 포함 여부</b>입니다. 하나투어는 다 하면 $80 추가.'},
+ {d:'3일',dt:'1/14 목',ta:'바나힐 · 선짜 야시장',tb:'후에로 이동 · 왕궁',rows:[
+  ['오전',[I('a','바나힐','케이블카·골든브릿지·테마파크')],[I('m','다낭 → 후에 버스','약 3시간')]],
+  ['점심',[I('a','퓨전 뷔페','바나힐')],[I('c','현지식')]],
+  ['오후',[I('a','바나힐 계속'),I('c','APEC 조각공원','하나투어는 1일차')],[I('b','후에 왕궁','왕궁 전동카 포함'),I('b','티엔무 파고다'),I('b','동바 시장'),I('o','드래곤보트 $20')]],
+  ['저녁',[I('a','르가든 한상','소낙전골')],[I('b','후에 전통 궁중식')]],
+  ['밤',[I('a','선짜 야시장'),I('a','반미 간식')],[I('o','2층버스 시티투어 $40'),I('o','시내 전동카 $20')]],
+  ['숙소',[I('c','다낭 같은 호텔')],[I('b','후에 호텔','멜리아 빈펄 휴 또는 인도차인 팰리스')]]],
+  diff:'<b>가장 크게 갈리는 날.</b> 모두투어는 바나힐에서 하루, 하나투어는 3시간 이동해 후에 왕궁·사원을 보고 후에에서 잡니다.'},
+ {d:'4일',dt:'1/15 금',ta:'다낭 시내 · 한강유람선',tb:'왕릉 2곳 · 다낭 복귀',rows:[
+  ['오전',[I('a','호텔 부대시설 이용','체크아웃')],[I('b','카이딘 왕릉'),I('b','민망 황제릉')]],
+  ['점심',[I('c','쌀국수+월남쌈')],[I('c','현지식')]],
+  ['오후',[I('s','쇼핑센터','전 일정 3회'),I('a','영흥사(손짜)'),I('a','다낭대성당 외관'),I('a','한시장'),I('a','미케비치 또는 티타임')],[I('m','후에 → 다낭 버스','약 3시간'),I('s','쇼핑 3회','약 2시간 30분~3시간')]],
+  ['저녁',[I('c','삼겹살')],[I('c','무제한 삼겹살')],1],
+  ['밤',[I('a','한강유람선'),I('c','공항 이동')],[I('c','공항 이동')]],
+  ['숙소',[I('c','기내')],[I('c','기내')],1]],
+  diff:'모두투어는 <b>다낭 시내·한강유람선</b>으로 여유 있게, 하나투어는 <b>왕릉 2곳 → 3시간 이동 → 쇼핑 3회</b>로 가장 빡빡한 날입니다.'},
+ {d:'5일',dt:'1/16 토',ta:'귀국',tb:'귀국',rows:[
+  ['새벽',[I('c','00:30 다낭 → 06:50 김해')],[I('c','00:30 다낭 → 06:50 김해')],1]],
+  diff:'같은 비행편으로 귀국합니다. 기내식은 둘 다 포함되지 않습니다.'}];
+let cur=0,all=false;
+function card(x){return `<div class="dcard"><div class="dhead"><div class="dn"><b>${x.d}</b><small>${x.dt}</small></div><div class="ta"><small>모두투어</small><strong>${x.ta}</strong></div><div class="tb"><small>하나투어</small><strong>${x.tb}</strong></div></div>${x.rows.map(r=>`<div class="drow${r[3]?'':' isdif'}"><div class="tl">${r[0]}<em class="${r[3]?'same':'dif'}">${r[3]?'비슷':'다름'}</em></div><div class="ca">${r[1].join('')}</div><div class="cb">${r[2].join('')}</div></div>`).join('')}<div class="ddiff">${x.diff}</div></div>`;}
+function drawCourse(){$('#daytabs').innerHTML=CD.map((x,i)=>`<button type="button" role="tab" aria-selected="${!all&&i===cur}" data-i="${i}">${x.d}<small>${x.dt}</small></button>`).join('');
+ document.querySelectorAll('#daytabs button').forEach(b=>b.onclick=()=>{cur=+b.dataset.i;all=false;drawCourse();});
+ $('#dayview').innerHTML=all?CD.map(card).join(''):card(CD[cur]);$('#showall').textContent=all?'하루씩 보기':'5일 전체 펼치기';}
+$('#showall').onclick=()=>{all=!all;drawCourse();};
+drawCourse();
+const OA=['1일차 미케비치 해변 자유시간','전신마사지 120분','호이안 바구니배·야경투어·씨클로 (포함)','바나힐 (케이블카·골든브릿지·테마파크)','선짜 야시장·반미 간식','영흥사(손짜)·다낭대성당 외관·한시장','한강유람선','다낭 3박 같은 호텔'];
+const OC=['같은 비행편 (VJ989/988)','마블마운틴','호이안 투본강 목선·도자기마을','호이안 구시가지 4곳','APEC 공원 (날짜만 다름)','지정 쇼핑센터 3회','마지막 날 저녁 삼겹살'];
+const OBx=['참 조각 박물관','2일차 오전 자유시간','마블마운틴 엘리베이터 (올라갈 때)','후에 왕궁 (왕궁 전동카 포함)','티엔무 파고다','동바 시장','후에 전통 궁중식','후에 호텔 1박','카이딘 왕릉','민망 황제릉','전통 모자 \'농\' 증정'];
+const PB=['바구니배 $30','야경투어 $30 (소원배 탑승 포함)','씨클로 $20','바나힐 $70 (최소 6명)','마사지 120분 $40','한강크루즈 $30'];
+$('#onlyA').innerHTML=OA.map(x=>`<li>${x}</li>`).join('');$('#both').innerHTML=OC.map(x=>`<li>${x}</li>`).join('');$('#onlyB').innerHTML=OBx.map(x=>`<li>${x}</li>`).join('');$('#paidB').innerHTML=PB.map(x=>`<li>${x}</li>`).join('');
+function mapSvg(who){const N={hue:[120,52,'후에'],dn:[250,170,'다낭'],bana:[95,205,'바나힐'],hoi:[320,280,'호이안']},col=who==='A'?'#0e5e63':'#c23d22',dim='#cfc6b4';
+ const on=who==='A'?{bana:1,hoi:1}:{hue:1,hoi:1};
+ const seg=(a,b,lab,act,lx,ly)=>`<line x1="${N[a][0]}" y1="${N[a][1]}" x2="${N[b][0]}" y2="${N[b][1]}" stroke="${act?col:dim}" stroke-width="${act?6:3}" stroke-linecap="round" ${act?'':'stroke-dasharray="6 7"'}/>${act?`<rect x="${lx-lab.length*6.5-12}" y="${ly-13}" width="${lab.length*13+24}" height="26" rx="13" fill="${col}" stroke="#fff" stroke-width="2"/><text x="${lx}" y="${ly+4}" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">${lab}</text>`:''}`;
+ let s=`<rect x="330" y="0" width="90" height="330" fill="#dbeef0" opacity=".6"/><text x="395" y="150" font-size="12" fill="#5b8c90" text-anchor="middle" transform="rotate(90 395 150)">동해(남중국해)</text>`;
+ s+=seg('dn','hue',who==='A'?'':'3·4일차 · 편도 3시간',!!on.hue,185,111)+seg('dn','bana',who==='A'?'3일차':'',!!on.bana,165,190)+seg('dn','hoi','2일차 · 약 40분',true,285,225);
+ 
+ s+=Object.entries(N).map(([k,[x,y,l]])=>{const act=k==='dn'||on[k];return `<circle cx="${x}" cy="${y}" r="${k==='dn'?13:10}" fill="${act?col:'#fff'}" stroke="${act?'#fff':dim}" stroke-width="3"/><text x="${x+(k==='bana'?-6:16)}" y="${y+(k==='bana'?-16:5)}" text-anchor="${k==='bana'?'middle':'start'}" font-size="15" font-weight="${act?900:500}" fill="${act?'var(--ink)':'#9a917f'}">${l}${k==='dn'?(who==='A'?' · 3박':' · 2박'):k==='hue'&&who==='B'?' · 1박':''}</text>`}).join('');
+ if(who==='A')s+=`<text x="120" y="80" text-anchor="middle" font-size="12" fill="#9a917f">가지 않음</text>`;else s+=`<text x="95" y="232" text-anchor="middle" font-size="12" fill="#9a917f">일정에 없음</text>`;
+ return s;}
+$('#mapA').innerHTML=mapSvg('A');$('#mapB').innerHTML=mapSvg('B');
+
 drawQ();
 draw();
 }
