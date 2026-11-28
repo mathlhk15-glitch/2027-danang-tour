@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>①+ 모두투어 + 1일 연장 4박6일 상세 계획</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--ink:#1d1d1f;--sub:#5f6368;--line:#e3e3e0;--a:#2563eb;--aS:#eaf1ff;--b:#c2410c;--bS:#fff1e8;--f:#0f766e;--fS:#e6f6f3;--sup:#7c3aed;--supS:#f3edff;--warn:#b45309}
+@media (prefers-color-scheme:dark){:root{--bg:#121214;--card:#1c1c1f;--ink:#ececec;--sub:#a3a3a8;--line:#333338;--a:#7aa7ff;--aS:#1b2540;--b:#ff9a62;--bS:#3a2316;--f:#4fd1bd;--fS:#123430;--sup:#b79bff;--supS:#2a2140;--warn:#f0b35a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-size:15px;line-height:1.55;word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 14px 60px}
+h1{font-size:1.45rem;margin:4px 0 6px;line-height:1.3}
+h2{font-size:1.15rem;margin:34px 0 10px}
+.lead{color:var(--sub);margin:0 0 14px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+nav a{font-size:.85rem;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+.verdict{background:var(--card);border:2px solid var(--f);border-radius:14px;padding:14px 16px;margin:14px 0}
+.verdict b.big{font-size:1.08rem}
+.tag{display:inline-block;font-size:.75rem;font-weight:800;padding:1px 7px;border-radius:6px}
+.tA{background:var(--aS);color:var(--a)}.tB{background:var(--bS);color:var(--b)}.tF{background:var(--fS);color:var(--f)}.tS{background:var(--supS);color:var(--sup)}
+.vs{display:grid;grid-template-columns:1fr 2px 1fr;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.vs>.div{background:linear-gradient(var(--a),var(--b))}
+.vs.ff>.div{background:linear-gradient(var(--sub),var(--f))}
+.col{padding:12px 14px;min-width:0}
+.hdA{background:var(--aS);color:var(--a);font-weight:800}
+.hdB{background:var(--bS);color:var(--b);font-weight:800}
+.hdO{background:var(--bg);color:var(--sub);font-weight:800}
+.hdF{background:var(--fS);color:var(--f);font-weight:800}
+.col small{display:block;font-weight:500;color:var(--sub);font-size:.8rem}
+.pc{font-size:.92rem}.pc ul{margin:0;padding-left:18px}.pc li{margin:4px 0}
+ul.t{list-style:none;margin:0;padding:0}
+ul.t li{padding:7px 0;border-bottom:1px dashed var(--line)}
+ul.t li:last-child{border-bottom:0}
+.tm{font-weight:700;font-variant-numeric:tabular-nums;margin-right:6px}
+.mv{display:inline-block;font-size:.78rem;color:var(--sub);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-left:4px;white-space:nowrap}
+.adopt{margin-top:8px;background:var(--fS);border-left:4px solid var(--f);padding:10px 12px;border-radius:8px;font-size:.92rem}
+/* final timeline */
+.day{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+.dh{background:var(--ink);color:var(--bg);padding:9px 14px;font-weight:700;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.dh small{font-weight:500;opacity:.85}
+.dh .stay{margin-left:auto;font-size:.8rem;background:var(--f);color:#fff;border-radius:6px;padding:1px 8px}
+table{width:100%;border-collapse:collapse;font-size:.9rem;background:var(--card)}
+th,td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--bg);font-size:.8rem;color:var(--sub)}
+td.tm2{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums;width:1%}
+td.mv2{white-space:nowrap;font-size:.82rem;color:var(--sub);width:1%}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{font-weight:800;background:var(--bg)}
+tr.opt td{color:var(--sub)}
+tr.new td:first-child{border-left:3px solid var(--f)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.memo{padding:9px 14px;font-size:.85rem;color:var(--sub);border-top:1px solid var(--line)}
+.note{font-size:.82rem;color:var(--sub);margin:6px 2px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0}
+.quote{background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:8px 10px;font-size:.88rem;margin:6px 0}
+.src a{color:var(--a)}.src li{margin:4px 0;font-size:.88rem}
+@media (max-width:640px){body{font-size:13px}.col{padding:9px 8px}.mv{font-size:.7rem}h1{font-size:1.2rem}.pc ul{padding-left:14px}th,td{padding:6px}}
+@media print{nav{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>①+ 모두투어 + 1일 연장 4박 6일<br>상세 계획</h1>
+<p class="lead">모두투어 BVP108VJ51 · 2027.1.12(화) 김해 08:30 출발 → <b>귀국편만 하루 미뤄</b> 1.17(일) 00:30 다낭 출발 · 06:50 김해 도착 · 성인 4명 · 2인실 2개</p>
+
+<nav>
+<a href="index.html" style="color:#4b3fa3;font-weight:800">← 최종 3개 (메인)</a><a href="packages.html">패키지 2개</a><a href="diy.html">자유여행</a><a href="#verdict">결론</a><a href="#flow">전체 흐름</a><a href="#days">날짜별 상세</a><a href="#way">후에 가는 법</a><a href="#hotel">숙소</a><a href="#move">교통</a><a href="#meal">식사</a><a href="#hue">후에 비용</a><a href="#lounge">공항 라운지</a><a href="#cost">총비용</a><a href="#ask">문의·예약</a><a href="#src">출처</a>
+</nav>
+
+<section id="verdict" class="verdict">
+<b class="big">가정: 모두투어가 귀국편을 1/17 00:30 VJ988로 바꿔 준다.</b>
+<ul style="margin:8px 0 0;padding-left:20px">
+<li><b>1/12~1/15:</b> 패키지 그대로 진행합니다.</li>
+<li><b>1/15 밤:</b> 공항 대신 한강 근처의 저렴한 호텔(AVORA)에서 잠만 잡니다.</li>
+<li><b>1/16(토):</b> 전용차 한 대로 후에를 다녀옵니다.
+ <ul>
+  <li>후에 관광: 왕궁, 티엔무 사원, 민망 황제릉, 카이딘 왕릉</li>
+  <li>저녁: Five Senses Spa 발 마사지 → 나이트 워킹 스트리트 저녁 → 쯔엉띠엔 다리 조명</li>
+  <li>그 뒤 호텔에서 짐을 찾아 공항으로 갑니다.</li>
+ </ul></li>
+</ul>
+<p style="margin:8px 0 0">1인 예상은 <b>829,235원 + 귀국편 변경비(X)</b>, 4명은 <b>3,316,940원 + 4X</b>입니다.</p>
+<ul style="margin:4px 0 0;padding-left:20px">
+<li>자유여행(1,248,130원)보다 1인 약 41.9만 원 쌉니다(X 제외 기준).</li>
+<li><b>X가 1인 약 32만 원 이하라면</b> 자유여행보다 10만 원 이상 쌉니다.</li>
+</ul>
+<p class="note" style="margin:6px 0 0">X, 호텔 요금, 차량 초과 요금은 아직 확인하지 못한 금액입니다.</p>
+</section>
+
+<h2 id="flow">1. 전체 흐름</h2>
+<div class="tblwrap"><table style="min-width:640px">
+<tr><th>날짜</th><th>진행</th><th>핵심 일정</th><th>숙소</th><th>식사(조·중·석)</th></tr>
+<tr><td>1/12 (화)</td><td><span class="tag tA">패키지</span></td><td>다낭 도착 → 미케비치 자유시간 → 호텔</td><td>패키지 호텔</td><td>— · 포함 · 포함</td></tr>
+<tr><td>1/13 (수)</td><td><span class="tag tA">패키지</span></td><td>전신마사지 2시간, 마블마운틴, 투본강 목선, 호이안 고대도시, 바구니배, 야경투어, 씨클로</td><td>패키지 호텔</td><td>포함 · 소불고기 · 호이안 전통식</td></tr>
+<tr><td>1/14 (목)</td><td><span class="tag tA">패키지</span></td><td>바나힐, APEC 조각공원, 손짜 야시장</td><td>패키지 호텔</td><td>포함 · 퓨전뷔페 · 르가든 한상차림</td></tr>
+<tr><td>1/15 (금)</td><td><span class="tag tA">패키지</span> → <span class="tag tF">직접</span></td><td>쇼핑, 시내관광(대성당·영흥사), 한강유람선 → <b>공항 대신 AVORA 호텔</b></td><td><b>AVORA (직접 1박)</b></td><td>포함 · 쌀국수+월남쌈 · 삼겹살</td></tr>
+<tr class="new"><td>1/16 (토)</td><td><span class="tag tF">직접</span></td><td><b>전용차로 후에 하루</b>: 왕궁·티엔무·민망·카이딘 → 발 마사지 → 나이트 워킹 스트리트·다리 조명 → 공항</td><td>기내</td><td>반미 · 분보후에 · 후에 저녁</td></tr>
+<tr><td>1/17 (일)</td><td>—</td><td>00:30 다낭 → 06:50 김해</td><td>—</td><td>—</td></tr>
+</table></div>
+<p class="note">패키지 부분은 모두투어 상품 PDF 기준입니다. 다른 상품과 합류해 진행할 수 있어 일정과 식사 순서가 바뀔 수 있습니다. 쇼핑센터는 패키지 기간 중 3회입니다.</p>
+
+<h2 id="days">2. 날짜별 상세</h2>
+<div id="dayList"></div>
+
+<h2 id="way">3. 1/16 후에 가는 방법: 3가지 비교</h2>
+<div class="tblwrap"><table style="min-width:700px">
+<tr><th>방법</th><th>구성</th><th>4명 교통비</th><th>1인</th><th>후에 관광</th><th>판단</th></tr>
+<tr class="new"><td><b>B. 하루 왕복 전용차 ★</b></td><td>"다낭 → 후에 관광 → 다낭" 7인승 2,100,000동 + 초과 요금 추정 400,000동</td><td class="n">약 2,500,000동<br>(약 13.75만 원)</td><td class="n"><b>34,375</b></td><td>09:30~19:30 (약 10시간), 왕릉 2곳</td><td><b>채택.</b> 가장 싸고 예약도 1건. 후에 체류가 가장 김</td></tr>
+<tr><td>A. 관광열차 + 후에 그랩 + 스파 차량</td><td>HĐ2 열차 4명 + 후에 시내 그랩 약 600,000동 + <b>Five Senses Spa 차량 1,200,000동</b>(다낭까지)</td><td class="n">약 4,310,000동<br>(약 23.7만 원)</td><td class="n">59,250</td><td>11:10~19:30, 왕릉 1곳</td><td>기차를 꼭 타고 싶을 때. 1인 약 2.5만 원 더 듦</td></tr>
+<tr><td>C. 다낭 → 후에 편도 + 후에 그랩 + 스파 차량</td><td>편도 7인승 1,600,000동 + 그랩 600,000동 + 스파 차량 1,200,000동</td><td class="n">약 3,400,000동</td><td class="n">46,750</td><td>B와 같음</td><td>B보다 비싸고 예약이 3건</td></tr>
+</table></div>
+<ul class="note">
+<li><b>환율:</b> 1만 동 = 550원 기준입니다.</li>
+<li><b>요금 출처:</b> 일반 업체 요금표(보내주신 화면)와 Five Senses Spa 답변(1,200,000동)입니다.</li>
+<li><b>B의 초과 요금:</b> 요금표에 이용 시간 한도가 없어서 추정치로 넣었습니다(30분당 7만 동 × 약 3시간). 견적 받을 때 꼭 확인하세요.</li>
+<li><b>B가 A보다 비싸지는 경우:</b> B의 실제 초과 요금이 약 2,200,000동을 넘으면 A가 더 쌉니다.</li>
+</ul>
+
+<h2 id="hotel">4. 1/15 숙소: 잠만 자는 1박 (트윈 2실)</h2>
+<div class="tblwrap"><table style="min-width:680px">
+<tr><th>순위</th><th>호텔</th><th>장점</th><th>주의</th><th>목표가 (1실)</th></tr>
+<tr class="new"><td><b>1</b></td><td><b>AVORA Boutique Hotel</b><br><span class="note">136 Lê Duẩn, 하이쩌우</span></td><td>
+ <ul style="margin:0;padding-left:16px">
+  <li>3성급, 24시간 프런트, 트윈룸 있음</li>
+  <li>한강까지 걸어서 5분이라 <b>패키지 마지막 일정(한강유람선)에서 바로 가기 편함</b></li>
+  <li>다낭공항까지 약 3km</li>
+  <li>후기 평점 9.0~9.2</li>
+ </ul></td><td>조식 포함 여부와 07:00 전에 먹을 수 있는지 확인</td><td class="n">4만~6만 원 (계산은 5만 원)</td></tr>
+<tr><td>2</td><td>패키지 호텔 연박<br><span class="note">예정: 더 나로드 또는 윈덤 골든베이</span></td><td>짐을 옮기지 않아도 됨</td><td>미케비치 쪽이라 마지막 날 동선이 조금 길어짐. AVORA보다 두 방 합계 3만~4만 원 이상 비싸면 AVORA 선택</td><td class="n">모두투어 견적</td></tr>
+</table></div>
+<ul class="note">
+<li><b>예약 메모:</b> 1/15 밤 21:30~22:00 도착(late arrival)이고, 1/16 07:00 체크아웃 후 <b>캐리어 4개를 21:30까지 맡긴다</b>는 내용을 적어 두세요.</li>
+<li>요금은 목표가이며 실제 객실료는 확인하지 못했습니다.</li>
+</ul>
+
+<h2 id="move">5. 교통 (연장 부분)</h2>
+<div class="tblwrap"><table style="min-width:640px">
+<tr><th>날짜·시간</th><th>구간</th><th>수단</th><th>소요</th><th>4명 비용</th></tr>
+<tr><td>1/12~1/15</td><td>공항 픽업, 전 일정</td><td>패키지 차량</td><td>—</td><td class="n">포함</td></tr>
+<tr><td>1/15 21:30쯤</td><td>한강유람선 → AVORA</td><td>가이드 차량 하차 요청 (안 되면 그랩)</td><td>약 5분</td><td class="n">0~약 5,000원</td></tr>
+<tr class="new"><td>1/16 07:00→21:40</td><td>AVORA → 하이반 터널 → 후에(왕궁·티엔무·민망·카이딘·스파·저녁) → 하이반 터널 → AVORA(짐 싣기) → 다낭공항 T2</td><td>🚐 7인승 전용차 1대</td><td>약 14.5시간</td><td class="n">약 2,500,000동<br>(약 137,500원)</td></tr>
+<tr class="tot"><td colspan="4">1인</td><td class="n">34,375원</td></tr>
+</table></div>
+<div class="box"><b>1/16 전용차 견적 요청 문구 (영어)</b>
+<div class="quote">Private 7-seat car for 4 adults, Sat 16 Jan 2027 ("Da Nang – Hue visit – Da Nang" day trip). 07:00 pick-up at AVORA Boutique Hotel, 136 Le Duan, Da Nang → via Hai Van tunnel → Hue Imperial City → lunch → Thien Mu Pagoda → Minh Mang Tomb → Khai Dinh Tomb → Five Senses Spa, Ben Nghe St. (wait 60 min) → dinner near Hue Night Walking Street (wait) → depart Hue 19:30 → AVORA Boutique Hotel (load 4 suitcases, 10 min) → Da Nang International Airport Terminal 2 by about 21:40. Please quote the total price including overtime, waiting, tolls and any night surcharge, and confirm the car fits 4 adults + 4 large suitcases.</div>
+<p class="note" style="margin:4px 0 0">캐리어 4개가 7인승에 안 들어가면 AVORA → 공항(3km) 구간만 그랩 1대를 더 부릅니다(약 5만~7만 동).</p></div>
+
+<h2 id="meal">6. 식사</h2>
+<div class="tblwrap"><table style="min-width:600px">
+<tr><th>날짜</th><th>조식</th><th>중식</th><th>석식</th><th>자비 (1인)</th></tr>
+<tr><td>1/12</td><td>— (기내식 불포함)</td><td>현지식 또는 한식</td><td>현지식 또는 한식</td><td class="n">공항 간식 정도</td></tr>
+<tr><td>1/13</td><td>호텔식</td><td>소불고기</td><td>호이안 전통식</td><td class="n">0</td></tr>
+<tr><td>1/14</td><td>호텔식</td><td>퓨전뷔페</td><td>르가든 한상차림(소낙전골) + 반미</td><td class="n">0</td></tr>
+<tr><td>1/15</td><td>호텔식</td><td>쌀국수 + 월남쌈</td><td>삼겹살</td><td class="n">0</td></tr>
+<tr class="new"><td>1/16</td><td>반미·커피 약 6만 동 (AVORA 조식 포함 요금이면 0)</td><td><b>분보후에</b> + 음료 약 12만 동</td><td><b>후에 저녁</b> 약 20만 동 + 간식 5만 동</td><td class="n">약 23,650</td></tr>
+<tr><td>1/16 밤</td><td colspan="3">공항 라운지: 디저트·음료·간단한 음식 (무료 카드)</td><td class="n">0</td></tr>
+</table></div>
+
+<h2 id="hue">7. 후에에서 쓰는 비용 (1/16)</h2>
+<div class="tblwrap"><table style="min-width:640px">
+<tr><th>항목</th><th>현지 요금</th><th>4명</th><th>1인 (원)</th><th>메모</th></tr>
+<tr><td>입장권: 왕궁 + 민망 + 카이딘 묶음권</td><td>420,000동/인</td><td>1,680,000동</td><td class="n">23,100</td><td>2일 유효 묶음권. 따로 사면 50만 동</td></tr>
+<tr><td>티엔무 사원</td><td>무료</td><td>—</td><td class="n">0</td><td></td></tr>
+<tr><td>왕궁 현장 가이드</td><td>200,000동/명</td><td>200,000동</td><td class="n">2,750</td><td>설명이 있어야 만족도가 높음</td></tr>
+<tr><td><b>Five Senses Spa 발 마사지 60분</b></td><td>322,000동/인 + 팁 약 50,000동</td><td>1,488,000동</td><td class="n">20,460</td><td>달러 현금 말고 동이나 카드(VND 결제)로</td></tr>
+<tr><td>점심 (분보후에 + 음료)</td><td>약 120,000동/인</td><td>480,000동</td><td class="n">6,600</td><td>스파 근처 Quán Cẩm 등</td></tr>
+<tr><td>저녁 + 간식</td><td>약 250,000동/인</td><td>1,000,000동</td><td class="n">13,750</td><td>나이트 워킹 스트리트 주변</td></tr>
+<tr class="opt"><td>왕궁 전동카 (선택)</td><td>현장 요금</td><td>—</td><td class="n">—</td><td>요금 미확인</td></tr>
+<tr class="tot"><td>후에 현지 지출 합계 (차량 제외)</td><td></td><td>4,848,000동</td><td class="n">66,660</td><td></td></tr>
+</table></div>
+<p class="note">환율은 1만 동 = 550원입니다. 트래블월렛 카드로 결제할 때는 <b>VND를 선택</b>(원화 결제는 거절)하고, 카드 수수료가 붙는지 물어보세요. 팁과 노점용으로 1인 50만~60만 동 정도 현금을 준비하세요.</p>
+
+<h2 id="lounge">8. 다낭공항 라운지 (확인 결과)</h2>
+<div class="vs ff">
+ <div class="col hdF">반다 라운지 (Vanda) · 1순위<small>국제선 T2 · 게이트 4~5 근처 중층</small></div><div class="div"></div><div class="col hdF">CIP 오키드 라운지 · 2순위<small>국제선 T2 · 게이트 6~7 위 중층</small></div>
+ <div class="col pc"><ul>
+  <li>PP 사이트 기준 매일 09:00~01:00 운영. <b>00:30 출발편도 이용 가능</b></li>
+  <li>최대 3시간 이용</li>
+  <li>한국인 후기: PP 카드와 더라운지 앱으로 이용 가능. 2025년 10월 문을 연 곳이라 깨끗하고 한산</li>
+  <li>음식: 빵, 떡볶이, 컵라면, 베트남 국수</li>
+ </ul></div><div class="div"></div>
+ <div class="col pc"><ul>
+  <li>PP 라운지. 운영 시간 표기가 "24시간"과 "09:00~마지막 출발편까지"로 엇갈리지만, 어느 쪽이든 00:30 출발편은 이용 가능</li>
+  <li>즉석 쌀국수와 따뜻한 요리 뷔페가 있다는 소개가 있음</li>
+  <li>넓은 대신 붐빌 수 있음</li>
+ </ul></div>
+</div>
+<div class="adopt"><b>다낭공항 국제선(T2)에서 PP 카드로 두 라운지를 모두 이용할 수 있습니다.</b> 드래곤패스(DragonPass)로도 들어갈 수 있습니다.
+<ul style="margin:6px 0 0;padding-left:20px">
+ <li><b>카드 확인:</b>
+  <ul>
+   <li>카드 종류(PP, 드래곤패스, 더라운지 중 무엇인지)</li>
+   <li>연간 무료 횟수와 전월 실적 조건</li>
+   <li><b>동반자도 무료인지</b>(4명이 각자 카드가 있어야 할 가능성이 큼)</li>
+  </ul></li>
+ <li><b>카드가 없을 때:</b> 현장 결제 약 $27입니다.</li>
+ <li><b>시간:</b> 21:40 공항 도착 → 수속과 출국 심사 후 22:20쯤 입장 → 23:45 탑승구 이동. <b>약 1시간 20분</b>입니다.</li>
+ <li><b>비엣젯 마감:</b> 국제선 수속 카운터는 출발 50분 전(공항에 따라 60분 전)에, 탑승구는 15분 전에 닫힙니다. 온라인 체크인을 미리 해 두세요.</li>
+</ul></div>
+
+<h2 id="cost">9. 총비용 (1인)</h2>
+<div class="tblwrap"><table>
+<tr><th>항목</th><th>근거</th><th class="n">1인 (원)</th></tr>
+<tr><td>모두투어 BVP108VJ51 상품가</td><td>항공, 호텔 3박, 차량, 입장료, 기사·가이드 경비, 여행자보험 포함</td><td class="n">669,900</td></tr>
+<tr class="new"><td><b>귀국편 변경비 (X)</b></td><td>변경수수료 + 운임 차액 (모두투어 확인)</td><td class="n"><b>X</b></td></tr>
+<tr><td>1/15 AVORA 1박</td><td>트윈 5만 원 × 2실 ÷ 4</td><td class="n">25,000</td></tr>
+<tr><td>1/16 전용차</td><td>7인승 2,100,000동 + 초과 추정 400,000동, ÷ 4</td><td class="n">34,375</td></tr>
+<tr><td>후에 입장권 + 가이드</td><td>묶음권 42만 동 + 가이드 1/4</td><td class="n">25,850</td></tr>
+<tr><td>발 마사지 60분 + 팁</td><td>Five Senses Spa 32.2만 동 + 5만 동</td><td class="n">20,460</td></tr>
+<tr><td>1/16 식사</td><td>아침 반미, 점심 분보후에, 후에 저녁, 간식</td><td class="n">23,650</td></tr>
+<tr><td>잡비·예비비</td><td>물, 전동카, 짐용 그랩, 요금 변동</td><td class="n">30,000</td></tr>
+<tr class="tot"><td colspan="2">1인 합계</td><td class="n">829,235 + X</td></tr>
+<tr class="tot"><td colspan="2">4명 합계</td><td class="n">3,316,940 + 4X</td></tr>
+</table></div>
+<ul class="note">
+<li><b>별도 항목:</b> 패키지 기간 매너팁(마사지 120분 $4 등), 개인 쇼핑, 창원 ↔ 김해 교통</li>
+<li><b>라운지 카드가 없는 사람:</b> 1인 약 4만 원 추가</li>
+<li><b>여행자보험:</b> 패키지 보험이 1/16~17까지 적용되는지 확인하세요.</li>
+<li><b>A안(관광열차 + 스파 차량 1,200,000동)으로 바꾸면:</b> 1인 약 850,260원 + X (약 2.1만 원 증가)</li>
+</ul>
+
+<div class="tblwrap" style="margin-top:12px"><table style="min-width:620px">
+<tr><th>비교 (1인)</th><th class="n">비용</th><th>후에</th><th>호이안 숙박</th><th>쇼핑센터</th><th>준비</th></tr>
+<tr><td>① 모두투어 그대로</td><td class="n">669,900</td><td>✗</td><td>✗</td><td>3회</td><td>없음</td></tr>
+<tr class="new"><td><b>①+ 모두투어 연장</b></td><td class="n"><b>829,235 + X</b></td><td>✓ 하루 (왕릉 2곳 + 야경)</td><td>✗</td><td>3회</td><td>호텔 1박, 차량 1건, 스파</td></tr>
+<tr><td>② 하나투어 (+야경·소원배)</td><td class="n">633,952</td><td>✓ 1박</td><td>✗</td><td>3회</td><td>옵션 선택</td></tr>
+<tr><td>③ 자유여행</td><td class="n">1,248,130</td><td>✓ 당일치기</td><td>✓</td><td>0회</td><td>전부</td></tr>
+</table></div>
+<p class="note"><b>X가 1인 약 32만 원 이하면</b> 연장안이 자유여행보다 10만 원 이상 쌉니다. 모두투어의 호이안 야경투어는 강변에서 소원등을 띄우는 방식이라 <b>소원배 탑승은 없습니다</b>.</p>
+
+<h2 id="ask">10. 모두투어 문의와 예약 순서</h2>
+<div class="box"><ol style="margin:0;padding-left:20px">
+<li><b>모두투어 전화 (가장 먼저)</b>
+ <ul>
+  <li>귀국편을 1/17 00:30 VJ988로 바꿀 수 있는지, 1인·4명 변경비는 얼마인지</li>
+  <li>안 되면 같은 날짜 출발 4박 6일 상품이 있는지</li>
+  <li>1/15 마지막 일정 후 <b>공항 대신 한강변 호텔에서 내려주는지</b>, 이탈 동의서가 필요한지</li>
+  <li>패키지 호텔 연박 가격 (AVORA와 비교용)</li>
+  <li>여행자보험이 연장일까지 적용되는지</li>
+  <li>발권 기한과 취소 수수료</li>
+ </ul></li>
+<li><b>모두투어 예약 확정·발권.</b> 선발권 특가 상품이라 발권 후 변경·취소에 비용이 붙습니다.</li>
+<li><b>AVORA 1박:</b> 무료 취소 요금으로 예약하고, late arrival과 짐 보관을 메모하세요.</li>
+<li><b>1/16 전용차:</b> 위 영어 문구로 견적을 받으세요. 확인할 것은 기본 시간, 초과 요금, 캐리어 적재입니다. 초과 요금이 2,200,000동을 넘으면 A안(열차 + 스파 차량)으로 바꿉니다.</li>
+<li><b>Five Senses Spa:</b> 1/16 17:00, 4명 발 마사지 60분을 예약하고, 카드 수수료와 작은 가방 보관을 확인하세요.</li>
+<li><b>라운지 카드 발급:</b> 4명 각자 카드를 준비하고, 동반자 조건을 확인하세요.</li>
+<li><b>출발 전:</b> 베트남 온라인 사전입국신고 QR(입국 3일 이내), 비엣젯 온라인 체크인.</li>
+</ol></div>
+
+<h2 id="src">11. 출처</h2>
+<ul class="src">
+<li>모두투어 BVP108VJ51 상품 상세 PDF: 일정, 식사, 예정 호텔, 포함·불포함, 쇼핑 3회, 여정 변경 시 별도비용 (<a href="pdf/modetour-BVP108VJ51-0112.pdf">원본 PDF</a>)</li>
+<li>차량: 현지 업체 요금표 캡처(다낭 → 후에 관광 → 다낭 7인승 2,100,000동, 후에 → 다낭 편도 1,600,000동), Five Senses Spa 차량 답변 1,200,000동, <a href="https://www.kkday.com/en/product/127396">후에 업체 초과 요금 예시(30분당 7만 동)</a></li>
+<li>Five Senses Spa: 메뉴판 캡처(발 마사지 60분 322,000동), <a href="https://vinpearl.com/en/spas-in-hue">주소·영업시간 (5 Ben Nghe, 08~23시)</a></li>
+<li>AVORA: <a href="https://www.travelocity.com/Da-Nang-Hotels-Avora-Boutique-Hotel.h32439349.Hotel-Information">위치·평점</a> · <a href="https://m.booking.com/hotel/vn/avora-boutique.en-gb.html">트윈룸·24시간 프런트·공항 3km</a></li>
+<li>라운지: <a href="https://www.prioritypass.com/ko-KR/lounges/vietnam/da-nang-international/dad1-vanda-lounge">PP 반다 라운지</a> · <a href="https://prioritypass.com/lounges/vietnam/da-nang-international/dad-cip-orchid-lounge">PP 오키드 라운지</a> · <a href="https://www.pointsbrotherhood.com/?p=15569">다낭공항 라운지 정리</a> · <a href="https://www.trvlogue.com/ko/da-nang-vanda-lounge-review">반다 라운지 후기</a></li>
+<li>비엣젯 마감 시간: <a href="https://www.vietjetair.com/ja/pages/to-have-a-good-flight-1599448842652/how-to-check-in-1685510691899">비엣젯 체크인 안내</a> · <a href="https://www.vietjetair.com/en/faq/flight-procedures-1619722426262">비엣젯 FAQ</a></li>
+<li>후에: <a href="https://thuathienhue.gov.vn/Visitor/Visitor-detail/tid/Hue-Monuments-Complex/newsid/508BAE4C-5AD2-4330-A7F2-B01C00A6D33C/cid/13F65AE6-650B-4AB3-8564-C2F011F387FA">후에시 입장료표</a> · <a href="https://junglebosstours.com/explorer/tourism-blog/hue-imperial-city">묶음권 2일 유효</a></li>
+</ul>
+<p class="note">귀국편 변경비, 호텔 요금, 전용차 초과 요금, 스파 예약 가능 여부는 아직 확인되지 않았습니다. 위 금액은 예산 기준입니다.</p>
+</div>
+
+<script>
+const D=[
+{d:'1/12 (화)',t:'패키지 1일차 · 다낭 도착',s:'패키지 호텔 (예정: 더 나로드 다낭 외)',r:[
+ ['05:30','김해공항 국제선 개별 수속(출발 3시간 전까지). 베트남 온라인 사전입국신고 QR(입국 3일 이내)','',''],
+ ['08:30→11:00','비엣젯 김해 → 다낭','✈',''],
+ ['11:00~','"모두투어" 미팅보드를 든 현지인 가이드와 미팅 → 시내에서 한국인 가이드와 합류','🚌',''],
+ ['오후','미케비치 자유시간 → 호텔 체크인·휴식','🚌',''],
+ ['식사','중식·석식: 현지식 또는 한식','','']
+],m:''},
+{d:'1/13 (수)',t:'패키지 2일차 · 마사지 · 마블마운틴 · 호이안',s:'패키지 호텔',r:[
+ ['오전~','전신마사지 2시간(팁 $4) → 마블마운틴(오행산)','🚌',''],
+ ['오후','호이안 → 투본강 목선 → 고대도시(광조회관·내원교·풍흥의 집·떤끼의 집) → 바구니배','🚌',''],
+ ['저녁','호이안 야경투어(강변 소원등 + 야시장 + 음료, 소원배 탑승 없음) → 씨클로 → 다낭 호텔','🚌',''],
+ ['식사','조식 호텔식 · 중식 소불고기 · 석식 호이안 전통식','','']
+],m:''},
+{d:'1/14 (목)',t:'패키지 3일차 · 바나힐 · 손짜 야시장',s:'패키지 호텔',r:[
+ ['오전 또는 오후','바나힐(케이블카·골든브릿지·테마파크)','🚌',''],
+ ['저녁','APEC 조각공원 → 손짜 야시장 → 반미','🚌',''],
+ ['식사','조식 호텔식 · 중식 퓨전뷔페 · 석식 르가든 한상차림(소낙전골)','','']
+],m:'바나힐 산 위는 춥습니다. 겉옷을 챙기세요.'},
+{d:'1/15 (금)',t:'패키지 4일차 → 공항 대신 AVORA로',s:'AVORA Boutique Hotel (직접 1박)',r:[
+ ['오전','호텔 부대시설 이용 후 체크아웃 (캐리어는 패키지 차량에)','',''],
+ ['낮','쇼핑센터 → 다낭 시내관광(미케비치·대성당·손짜 반도·영흥사)','🚌',''],
+ ['저녁','삼겹살 저녁 → 한강유람선 (금요일 21시 용다리 불쇼와 시간이 맞으면 덤)','🚌',''],
+ ['21:30쯤','공항 대신 AVORA 하차(한강에서 약 5분, 모두투어에 사전 확인) → 체크인','🚌/🚕','s'],
+ ['식사','조식 호텔식 · 중식 쌀국수+월남쌈 · 석식 삼겹살','','']
+],m:'1/16에 들고 다닐 작은 가방과 캐리어를 이날 밤에 나눠 싸 두세요.'},
+{d:'1/16 (토)',t:'전용차로 후에 하루 → 발 마사지 → 야경 → 공항',s:'기내',r:[
+ ['06:30','반미·커피(또는 호텔 조식). 체크아웃, 캐리어 4개 프런트 보관','',''],
+ ['07:00','AVORA 출발 → 하이반 터널 → 후에','🚐 약 2.5시간','s'],
+ ['09:30~11:30','후에 왕궁(오문·태화전). 묶음권 구입, 현장 가이드','🚶',''],
+ ['11:40~12:40','점심 분보후에','🚐',''],
+ ['13:00~13:40','티엔무 사원','🚐 약 15분',''],
+ ['14:10~15:10','민망 황제릉','🚐 약 30분',''],
+ ['15:30~16:25','카이딘 왕릉 (16:30 입장 마감 전)','🚐 약 20분','s'],
+ ['17:00~18:00','Five Senses Spa 발 마사지 60분','🚐 약 25분','s'],
+ ['18:00~19:25','나이트 워킹 스트리트 → 저녁 → 19시 쯔엉띠엔 다리 조명','🚶 약 10분','s'],
+ ['19:30','같은 차로 출발 → 하이반 터널','🚐 약 2시간',''],
+ ['21:30','AVORA에서 캐리어 싣기 (안 들어가면 그랩 1대 추가)','🚐 10분',''],
+ ['21:40','다낭공항 국제선 T2 → 수속(마감 23:30~23:40) → 22:20쯤 라운지','🚶','s']
+],m:'날씨가 맑으면 갈 때 하이반 고개 정상에 들를 수 있습니다(약 +30분, 왕궁 시간이 줄어듦). 지치면 민망 황제릉을 빼고 스파를 일찍 가세요. 이때는 개별권(왕궁 + 카이딘 35만 동)이 더 쌉니다.'},
+{d:'1/17 (일)',t:'귀국',s:'',r:[['00:30→06:50','VJ988 다낭 → 김해 → 창원','✈','']],m:''}
+];
+const e=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+document.getElementById('dayList').innerHTML=D.map(x=>`<div class="day"><div class="dh">${e(x.d)} <small>${e(x.t)}</small>${x.s?`<span class="stay">숙박: ${e(x.s)}</span>`:''}</div>
+<div class="tblwrap" style="border:0;border-radius:0"><table>${x.r.map(r=>`<tr${r[3]?' class="new"':''}><td class="tm2">${e(r[0])}</td><td>${e(r[1])}${r[3]?' <span class="tag tS">연장 핵심</span>':''}</td><td class="mv2">${e(r[2])}</td></tr>`).join('')}</table></div>
+${x.m?`<div class="memo">${e(x.m)}</div>`:''}</div>`).join('');
+</script>
+
+</body>
+</html>

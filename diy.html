@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>③ 자유여행 4박6일 최종안 — 다낭·호이안 + 후에 기차 당일치기</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--ink:#1d1d1f;--sub:#5f6368;--line:#e3e3e0;--a:#2563eb;--aS:#eaf1ff;--b:#c2410c;--bS:#fff1e8;--f:#0f766e;--fS:#e6f6f3;--sup:#7c3aed;--supS:#f3edff;--warn:#b45309}
+@media (prefers-color-scheme:dark){:root{--bg:#121214;--card:#1c1c1f;--ink:#ececec;--sub:#a3a3a8;--line:#333338;--a:#7aa7ff;--aS:#1b2540;--b:#ff9a62;--bS:#3a2316;--f:#4fd1bd;--fS:#123430;--sup:#b79bff;--supS:#2a2140;--warn:#f0b35a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-size:15px;line-height:1.55;word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 14px 60px}
+h1{font-size:1.45rem;margin:4px 0 6px;line-height:1.3}
+h2{font-size:1.15rem;margin:34px 0 10px}
+.lead{color:var(--sub);margin:0 0 14px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+nav a{font-size:.85rem;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+.verdict{background:var(--card);border:2px solid var(--f);border-radius:14px;padding:14px 16px;margin:14px 0}
+.verdict b.big{font-size:1.08rem}
+.tag{display:inline-block;font-size:.75rem;font-weight:800;padding:1px 7px;border-radius:6px}
+.tA{background:var(--aS);color:var(--a)}.tB{background:var(--bS);color:var(--b)}.tF{background:var(--fS);color:var(--f)}.tS{background:var(--supS);color:var(--sup)}
+.vs{display:grid;grid-template-columns:1fr 2px 1fr;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.vs>.div{background:linear-gradient(var(--a),var(--b))}
+.vs.ff>.div{background:linear-gradient(var(--sub),var(--f))}
+.col{padding:12px 14px;min-width:0}
+.hdA{background:var(--aS);color:var(--a);font-weight:800}
+.hdB{background:var(--bS);color:var(--b);font-weight:800}
+.hdO{background:var(--bg);color:var(--sub);font-weight:800}
+.hdF{background:var(--fS);color:var(--f);font-weight:800}
+.col small{display:block;font-weight:500;color:var(--sub);font-size:.8rem}
+.pc{font-size:.92rem}.pc ul{margin:0;padding-left:18px}.pc li{margin:4px 0}
+ul.t{list-style:none;margin:0;padding:0}
+ul.t li{padding:7px 0;border-bottom:1px dashed var(--line)}
+ul.t li:last-child{border-bottom:0}
+.tm{font-weight:700;font-variant-numeric:tabular-nums;margin-right:6px}
+.mv{display:inline-block;font-size:.78rem;color:var(--sub);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-left:4px;white-space:nowrap}
+.adopt{margin-top:8px;background:var(--fS);border-left:4px solid var(--f);padding:10px 12px;border-radius:8px;font-size:.92rem}
+/* final timeline */
+.day{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+.dh{background:var(--ink);color:var(--bg);padding:9px 14px;font-weight:700;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.dh small{font-weight:500;opacity:.85}
+.dh .stay{margin-left:auto;font-size:.8rem;background:var(--f);color:#fff;border-radius:6px;padding:1px 8px}
+table{width:100%;border-collapse:collapse;font-size:.9rem;background:var(--card)}
+th,td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--bg);font-size:.8rem;color:var(--sub)}
+td.tm2{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums;width:1%}
+td.mv2{white-space:nowrap;font-size:.82rem;color:var(--sub);width:1%}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{font-weight:800;background:var(--bg)}
+tr.opt td{color:var(--sub)}
+tr.new td:first-child{border-left:3px solid var(--f)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.memo{padding:9px 14px;font-size:.85rem;color:var(--sub);border-top:1px solid var(--line)}
+.note{font-size:.82rem;color:var(--sub);margin:6px 2px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0}
+.quote{background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:8px 10px;font-size:.88rem;margin:6px 0}
+.src a{color:var(--a)}.src li{margin:4px 0;font-size:.88rem}
+@media (max-width:640px){body{font-size:13px}.col{padding:9px 8px}.mv{font-size:.7rem}h1{font-size:1.2rem}.pc ul{padding-left:14px}th,td{padding:6px}}
+@media print{nav{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>다낭·호이안 4박 6일 + 후에 기차 당일치기<br>최종안</h1>
+<p class="lead">2027.1.12(화) 김해 08:30 출발 → 1.17(일) 06:50 김해 도착 · 성인 4명 · 비엣젯 직항 · 다낭 3박 → 호이안 1박</p>
+
+<nav>
+<a href="index.html" style="color:#4b3fa3;font-weight:800">← 최종 3개 (메인)</a><a href="packages.html">패키지 2개</a><a href="ext.html">모두투어 연장안</a><a href="#verdict">결론</a><a href="#change">바뀐 점</a><a href="#ways">당일치기 방식</a><a href="#hue">1/14 두 AI</a><a href="#days">최종 일정</a><a href="#hotel">숙소</a><a href="#car">차량</a><a href="#cost">비용</a><a href="#book">예약 순서</a><a href="#src">출처</a>
+</nav>
+
+<section id="verdict" class="verdict">
+<b class="big">최종: 후에는 1박하지 않고, 목요일에 "갈 때 관광열차 + 올 때 전용차"로 당일치기합니다.</b>
+<p style="margin:8px 0 0">숙소는 <b>다낭 3박 → 호이안 1박</b>으로 단순해집니다. 캐리어를 옮기는 날은 금요일 한 번뿐입니다. 다음 세 가지를 모두 챙깁니다.</p>
+<ul style="margin:4px 0 0;padding-left:20px">
+<li>금요일 호이안 야경·소원배</li>
+<li>토요일 21:00 용다리 불쇼</li>
+<li>하이반 해안 풍경(기차에서)</li>
+</ul>
+<p style="margin:6px 0 0">1인 예상 비용은 <b>1,248,130원</b>, 4명 합계는 4,992,520원입니다. 후에 1박안(1,244,980원)과 사실상 같습니다.</p>
+<p style="margin:6px 0 0"><span class="tag tA">Claude</span>와 <span class="tag tB">GPT</span> 모두 이 방식을 1순위로 추천했습니다. 1/14 세부 순서는 GPT안을 채택하고, Claude안의 확인 사항을 보완했습니다.</p>
+</section>
+
+<h2 id="change">1. 바뀐 점: 이전안과 최종안</h2>
+<div class="vs ff">
+ <div class="col hdO">이전안: 후에 1박<small>다낭 2 → 후에 1 → 호이안 1</small></div><div class="div"></div><div class="col hdF">최종안: 후에 기차 당일치기<small>다낭 3 → 호이안 1</small></div>
+ <div class="col pc"><ul>
+  <li><b>호텔 3곳</b>(더 나로드 → 멜리아 빈펄 후에 → 호이안 히스토릭)</li>
+  <li>1/14·1/15·1/16 <b>캐리어를 싣고 이동</b></li>
+  <li>하이반 고개 정상 전망대를 <b>차로</b> 들름</li>
+  <li>후에 관광: 왕궁, 티엔무, 동바시장, 왕릉 2곳, 궁중식 저녁</li>
+  <li>1/15 왕릉 → 호이안까지 <b>3시간 이상 이동</b></li>
+  <li>용다리 불쇼 없음(화요일 유람선)</li>
+  <li>1인 1,244,980원</li>
+ </ul></div><div class="div"></div>
+ <div class="col pc"><ul>
+  <li><b>호텔 2곳</b>(더 나로드 3박 → 호이안 히스토릭 1박)</li>
+  <li>캐리어 이동은 <b>1/15 한 번</b>(다낭 → 호이안 45분). 1/16은 공항까지 차에 실음</li>
+  <li>하이반 해안을 <b>관광열차</b>로 봄(도로는 터널로 지남)</li>
+  <li>후에 관광: <b>왕궁, 티엔무, 카이딘 왕릉</b>(핵심만)</li>
+  <li>1/15 오전에 짧게 이동하고 오행산까지 → 호이안 오후·야경</li>
+  <li><b>토요일 21:00 용다리 불쇼</b>를 보고 공항으로</li>
+  <li>1인 1,248,130원 (+3,150원)</li>
+ </ul></div>
+</div>
+
+<h2 id="ways">2. 후에 당일치기 방법 3가지</h2>
+<div class="tblwrap"><table>
+<tr><th>방식</th><th>시간표(2026년 공개 기준)</th><th>판단</th></tr>
+<tr><td><b>관광열차 왕복</b></td><td>다낭 07:05 → 후에 11:03 / 후에 14:30 → 다낭 18:15</td><td>✗ 추천하지 않음. 후에 체류가 <b>3시간 27분</b>뿐이고, 기차 안에서만 7시간 43분을 씁니다. 왕궁 한 곳 보기도 빠듯합니다.</td></tr>
+<tr><td><b>갈 때 관광열차 + 올 때 일반열차(SE7)</b></td><td>07:05 → 11:03 / 후에 19:43 → 다낭 22:15</td><td>△ 기차를 정말 좋아한다면 이 조합. 왕궁·사원·왕릉에 저녁까지 가능하지만, 밤 10시 15분에 도착하고 연착 위험이 있습니다.</td></tr>
+<tr class="new"><td><b>갈 때 관광열차 + 올 때 전용차</b> ★</td><td>07:05 → 11:03 / 후에에서 16:30쯤 차로 출발 → 다낭 호텔 19:00쯤</td><td>◎ <b>최종 채택.</b> 후에역에서 기사를 만나 관광하고, 마지막 왕릉에서 역으로 돌아가지 않고 다낭 호텔로 바로 갑니다.</td></tr>
+</table></div>
+<p class="note">2027년 1월 14일 실제 운행과 4석 확보 여부는 확인하지 못했습니다. 관광열차는 <a href="https://ketnoidisan.dsvn.vn/">베트남철도 관광열차 예약</a>, 일반열차는 <a href="https://dsvn.vn/">베트남철도 예약</a>에서 여행 날짜로 조회하세요. 관광열차 출발을 07:50으로 적은 자료도 있으니 예약 화면 시간을 기준으로 하세요. 2027년 설(2월 6일)과는 겹치지 않습니다.</p>
+
+<h2 id="hue">3. 1/14 후에 당일치기: 두 AI의 세부안</h2>
+<div class="vs">
+ <div class="col hdA">Claude안<small>왕궁 + 왕릉 2곳 + 후에에서 저녁</small></div><div class="div"></div><div class="col hdB">GPT안 ★ 채택<small>왕궁 + 티엔무 + 카이딘, 다낭에서 저녁</small></div>
+ <div class="col"><ul class="t">
+  <li><span class="tm">06:35</span>다낭역으로 <span class="mv">🚕 15분</span></li>
+  <li><span class="tm">07:05→11:03</span>HD2 관광열차, 오른쪽 좌석, 랑꼬 정차</li>
+  <li><span class="tm">11:30~13:30</span>왕궁부터 (현장 가이드)</li>
+  <li><span class="tm">13:30</span>점심</li>
+  <li><span class="tm">14:45~15:40</span>민망 황제릉</li>
+  <li><span class="tm">16:00~16:55</span>카이딘 왕릉 (16:30 전 입장)</li>
+  <li><span class="tm">17:30</span>티엔무 일몰(선택)</li>
+  <li><span class="tm">18:15</span>후에에서 저녁</li>
+  <li><span class="tm">19:20</span>SE7 열차 또는 18:30 전용차 → 21:00~22:20 다낭</li>
+ </ul>
+ <p class="note"><b>장점:</b> 왕릉 2곳(화려한 카이딘 + 웅장한 민망)을 비교하며 볼 수 있습니다.<br><b>단점:</b> 06:20부터 22시 전후까지 이어지는 <b>16시간 일정</b>입니다.</p></div><div class="div"></div>
+ <div class="col"><ul class="t">
+  <li><span class="tm">06:20</span>Grab 7인승이나 예약차로 다낭역. 조식이 안 맞으면 호텔 도시락 요청</li>
+  <li><span class="tm">07:05→11:03</span>HĐ2 관광열차. 진행 방향 오른쪽 좌석</li>
+  <li><span class="tm">11:10~12:15</span>후에역에서 전용차 픽업 → 분보후에 점심 → 왕궁</li>
+  <li><span class="tm">12:30~14:20</span>왕궁 (오문·태화전 중심, 약 2시간)</li>
+  <li><span class="tm">14:40~15:15</span>티엔무 사원</li>
+  <li><span class="tm">15:40~16:30</span>카이딘 왕릉 (당일 일정은 왕릉 1곳이면 충분)</li>
+  <li><span class="tm">16:30~</span>카이딘 → 하이반 터널 → 다낭 호텔 <b>19:00쯤</b>, 다낭에서 저녁</li>
+ </ul>
+ <p class="note"><b>장점:</b> 19시에 귀환해서 피로가 적고, 역으로 되돌아가지 않습니다.<br><b>단점:</b> 왕릉은 1곳만 봅니다.</p></div>
+</div>
+<div class="adopt"><b>최종 결정:</b> GPT 순서를 채택하고, Claude안에서 아래 사항을 보완합니다.
+<ul style="margin:6px 0 0;padding-left:20px">
+ <li><b>왕릉 입장 마감:</b> 운영은 07:00~17:30이고 마감 1시간 전까지만 입장할 수 있다는 안내가 있습니다. 카이딘에는 <b>16:30 전에 들어가세요</b>(GPT안 15:40 도착이면 충족).</li>
+ <li><b>입장권:</b> 왕궁 20만 동 + 카이딘 15만 동을 개별권으로 사는 것이 3곳 묶음권(42만 동)보다 쌉니다. 관광열차 표가 있으면 7일 동안 왕궁이 50% 할인된다는 안내도 있으니(2026년 11월부터) 매표소에서 열차표를 보여주세요.</li>
+ <li><b>여력이 있으면 민망 황제릉 추가:</b> 카이딘에서 약 20분입니다. 다낭 도착은 약 20:00으로 1시간 늦어지고, 이때는 묶음권(42만 동)을 사세요.</li>
+ <li><b>왕궁 현장 가이드</b>(20만 동/명)를 쓰세요. 설명이 있어야 만족도가 높습니다.</li>
+</ul></div>
+
+<h2 id="days">4. 최종 날짜별 일정과 이동수단</h2>
+<p class="note">현지 시각 · 🚐 기사 포함 7인승 전용차 · 🚕 GrabCar 7인승 · 🚆 기차 · 🚶 도보 · <span class="tag tS">보완</span> 두 AI 의견을 합친 부분</p>
+<div id="dayList"></div>
+
+<h2 id="hotel">5. 숙소 (트윈 2실, 조식·세금 포함)</h2>
+<div class="tblwrap"><table>
+<tr><th>날짜</th><th>호텔</th><th>객실</th><th>4명 예산</th></tr>
+<tr><td>1/12 → 1/15 (3박)</td><td><b>더 나로드 다낭</b> (미케비치)</td><td>슈페리어 시티 트윈 2실 × 3박</td><td class="n">570,000원</td></tr>
+<tr><td>1/15 → 1/16 (1박)</td><td><b>호이안 히스토릭 호텔</b> (구시가지 도보권)</td><td>클래식 트윈 2실</td><td class="n">230,000원</td></tr>
+<tr class="tot"><td colspan="3">합계 (1인 200,000원)</td><td class="n">800,000원</td></tr>
+</table></div>
+<ul class="note">
+<li>금액은 목표가이며 실제 요금은 확인하지 못했습니다.</li>
+<li>예약할 때 확인: 객실마다 싱글침대 2개, 조식 2인, 세금 포함 총액, 무료 취소 기한.</li>
+<li>호이안은 1/15 정오쯤 도착하니 <b>짐 먼저 맡기기(또는 이른 체크인)</b>를 요청하세요.</li>
+<li>1/16은 숙박하지 않습니다(00:30 비행기).</li>
+<li>다낭 대안: 노보텔 다낭 프리미어 한리버, 그랜드 투란</li>
+</ul>
+
+<h2 id="car">6. 차량 견적 (차량 1대, 4명 공동 부담)</h2>
+<div class="tblwrap"><table>
+<tr><th>날짜</th><th>기사에게 보낼 구간</th><th>목표액</th></tr>
+<tr><td>1/12</td><td>다낭공항 11:00 이후 픽업 → 더 나로드. 15:45 호텔 → 영흥사(대기) → 손짜 야시장 → 호텔</td><td class="n">75,000원</td></tr>
+<tr><td>1/13</td><td>더 나로드 → 바나힐 왕복(관광 중 대기) → 귀환 때 다낭대성당 하차. 이후 그랩</td><td class="n">50,000원</td></tr>
+<tr class="new"><td>1/14</td><td>06:20 호텔 → 다낭역(그랩) / <b>11:10 후에역 픽업 → 점심 → 왕궁 → 티엔무 → 카이딘 → 하이반 터널 → 더 나로드 하차</b>(후에 업체에 한 건으로 견적) / 저녁 그랩</td><td class="n">130,000원</td></tr>
+<tr class="new"><td>1/15</td><td>09:30 더 나로드 → 오행산(대기) → 호이안 히스토릭 호텔 하차. 캐리어 4개</td><td class="n">40,000원</td></tr>
+<tr><td>1/16</td><td>10:30 호이안 호텔 → 깜탄 → 점심 → 다낭 쇼핑·스파·저녁 대기 → 21:00 용다리 근처 → 21:35 다낭공항. 캐리어 4개, 약 11시간</td><td class="n">110,000원</td></tr>
+<tr class="tot"><td colspan="2">합계 (1인 101,250원)</td><td class="n">405,000원</td></tr>
+</table></div>
+<div class="box"><b>1/14 후에 차량 견적 요청 문구 (영어)</b>
+<div class="quote">Private 7-seat car for 4 adults, Thu 14 Jan 2027. Pick-up 11:10 at Hue Railway Station (train HD2) → lunch → Imperial City → Thien Mu Pagoda → Khai Dinh Tomb → drop-off at The Nalod Hotel, Da Nang (via Hai Van tunnel), around 19:00. Please quote total price including tolls, waiting time and driver tip.</div>
+<p class="note" style="margin:4px 0 0">참고 공시가(7인승 SUV): 다낭 ↔ 후에 편도(하이반 고개 경유) $52, 후에 8시간 관광 왕복 $77. 연료·통행료·팁 포함. 초과 대기·야간 요금은 별도 확인.</p></div>
+
+<h2 id="cost">7. 1인 비용 (환율 1만 동 = 550원)</h2>
+<div class="tblwrap"><table>
+<tr><th>항목</th><th>근거</th><th>최종안</th><th>이전안 (후에 1박)</th></tr>
+<tr><td>왕복 항공</td><td>캡처 운임 가정</td><td class="n">433,380</td><td class="n">433,380</td></tr>
+<tr><td>호텔 4박</td><td>다낭 3박 + 호이안 1박</td><td class="n">200,000</td><td class="n">210,000</td></tr>
+<tr><td>전용차·그랩</td><td>위 차량 표</td><td class="n">101,250</td><td class="n">125,000</td></tr>
+<tr class="new"><td>관광열차 HĐ2 편도</td><td>판매처 가격 약 3만~3.5만 원 (공식가 미확인)</td><td class="n">33,000</td><td class="n">—</td></tr>
+<tr><td>바나힐 콤보</td><td>130만 동</td><td class="n">71,500</td><td class="n">71,500</td></tr>
+<tr><td>후에 입장 + 가이드</td><td>왕궁 20만 + 카이딘 15만 동 + 가이드 20만 동 ÷ 4</td><td class="n">22,000</td><td class="n">23,100</td></tr>
+<tr><td>호이안·오행산·바구니배·소원배·씨클로</td><td></td><td class="n">33,000</td><td class="n">33,000</td></tr>
+<tr class="opt"><td>한강유람선 (선택)</td><td>20만 동</td><td class="n">11,000</td><td class="n">11,000</td></tr>
+<tr><td>마사지 2회</td><td>120분 + 90분</td><td class="n">85,000</td><td class="n">85,000</td></tr>
+<tr><td>식사 9끼·간식</td><td></td><td class="n">175,000</td><td class="n">175,000</td></tr>
+<tr><td>보험·eSIM</td><td></td><td class="n">23,000</td><td class="n">23,000</td></tr>
+<tr><td>팁</td><td>기사·스파</td><td class="n">25,000</td><td class="n">20,000</td></tr>
+<tr><td>예비비</td><td></td><td class="n">35,000</td><td class="n">35,000</td></tr>
+<tr class="tot"><td colspan="2">1인 합계</td><td class="n">1,248,130</td><td class="n">1,244,980</td></tr>
+<tr class="tot"><td colspan="2">4명 합계</td><td class="n">4,992,520</td><td class="n">4,979,920</td></tr>
+</table></div>
+<ul class="note">
+<li><b>돌아올 때 SE7 열차를 타면:</b> 후에 차량은 시내만 쓰므로 팀 약 6만 원 절감, 열차표 1인 약 1.1만 원 추가 → 1인 약 4천 원 절감. 대신 22:15 도착입니다.</li>
+<li><b>위탁수하물이 별도라면</b> 1인 130만~135만 원으로 준비하세요.</li>
+<li><b>제외 항목:</b> 창원 ↔ 김해 교통, 개인 쇼핑</li>
+<li><b>줄이려면:</b> 마사지 1회 빼기(약 −3.5만 원), 유람선 빼기(−1.1만 원)</li>
+</ul>
+
+<h2 id="book">8. 예약 순서와 체크</h2>
+<div class="box"><ol style="margin:0;padding-left:20px">
+<li><b>항공 (가장 먼저):</b>
+ <ul>
+  <li>성인 4명으로 한 번에 조회하고, 1/17 00:30 출발인지 확인하세요.</li>
+  <li>왕복 위탁수하물을 포함한 최종 결제액을 확인하세요.</li>
+  <li>비엣젯은 취소 시 포인트로 환불되는 운임이 많습니다. 인원을 확정한 뒤 결제하세요.</li>
+ </ul></li>
+<li><b>관광열차 HĐ2 4석:</b>
+ <ul>
+  <li>1월 판매가 열리면 바로 예약하세요. 판매 시작 시점은 확인하지 못했습니다.</li>
+  <li>4명이 같이 앉는 좌석인지 확인하세요. 진행 방향 오른쪽이 바다 쪽입니다.</li>
+  <li>매진되면 대안: SE10(08:59 → 12:10)으로 가고 왕궁 + 카이딘만 보거나, 하이반 고개를 경유하는 전용차 왕복으로 바꿉니다.</li>
+ </ul></li>
+<li><b>호텔 2건:</b>
+ <ul>
+  <li>더 나로드 1/12~15 (3박), 호이안 히스토릭 1/15~16 (1박)</li>
+  <li>무료 취소 요금으로 예약하세요.</li>
+ </ul></li>
+<li><b>차량:</b>
+ <ul>
+  <li>1/14 후에 구간(역 픽업 → 다낭 하차)과 1/16 종일(약 11시간, 야간 공항 하차) 조건부터 확정하세요.</li>
+  <li>캐리어 4개가 실리는지 사진으로 확인하고, 안 되면 16인승으로 바꿉니다.</li>
+ </ul></li>
+<li><b>바나힐·스파 2곳:</b>
+ <ul>
+  <li>스파는 샤워 가능 여부, 4명 동시 시작 여부, 1/16 캐리어 보관 여부를 확인하세요.</li>
+ </ul></li>
+<li><b>출발 전:</b>
+ <ul>
+  <li>다낭 총영사관의 최신 입국 안내를 확인하세요.</li>
+  <li>1월 중부는 비가 잦고 서늘하니 우산·바람막이를 챙기세요.</li>
+  <li>비가 오면 후에 왕궁은 우산을 쓰고 걷게 됩니다.</li>
+ </ul></li>
+</ol></div>
+
+<h2 id="src">9. 출처</h2>
+<ul class="src">
+<li><a href="https://thaiest.com/vietnam/travel/from-danang-to-hue-by-train-review">다낭 ↔ 후에 열차 시간표 (2026년 5월 기준)</a> · <a href="https://www.klook.com/activity/99690-train-ticket-between-hue-danang/">Klook — 관광열차 HD1~HD4 시간, 랑꼬 10분 정차</a></li>
+<li><a href="https://www.vietnamtourism.com/en/transport/da-nang-hue">다낭 ↔ 후에 노선 안내 — 해안을 따라가는 기찻길, 도로는 터널</a></li>
+<li><a href="https://junglebosstours.com/explorer/tourism-blog/hue-imperial-city">후에 입장권·묶음권 유효기간, 관광열차 이용객 왕궁 50% 할인(2026.11~)</a></li>
+<li><a href="https://thuathienhue.gov.vn/Visitor/Visitor-detail/tid/Hue-Monuments-Complex/newsid/508BAE4C-5AD2-4330-A7F2-B01C00A6D33C/cid/13F65AE6-650B-4AB3-8564-C2F011F387FA">후에시 정부 — 입장료표</a></li>
+<li><a href="https://danangfantasticity.com/the-dragon-show">다낭시 관광 공식 — 용다리 쇼 금·토·일 21시</a></li>
+<li><a href="https://www.dananghoiantrips.com/ko/car-rental-rates-da-nang-hoi-an-hue-ko/">현지 차량 공개 요금표 (2026)</a></li>
+<li>GPT가 제시한 링크: <a href="https://ketnoidisan.dsvn.vn/">관광열차 예약</a> · <a href="https://dsvn.vn/">베트남철도 예약</a> · <a href="https://nalod.com.vn/en/superior-city-room">더 나로드</a> · <a href="https://www.hoianhistorichotel.com.vn/rooms-suites/classic-room/">호이안 히스토릭 호텔</a> · <a href="https://sunworld.vn/ko/banahills">바나힐 공식</a></li>
+</ul>
+<p class="note">호텔·차량·열차의 2027년 1월 실제 가격과 좌석은 확인하지 못했습니다. 위 금액은 예산 기준입니다.</p>
+</div>
+
+<script>
+// [time, text, move, sup]
+const D=[
+{d:'1/12 (화)',t:'다낭 도착 · 영흥사 · 손짜 야시장',s:'더 나로드 다낭',r:[
+ ['05:30','김해공항 국제선 도착. 창원에서 4명 + 캐리어 4개가 한 차에 타는지 확인(예약 콜밴·택시 또는 자차 + 장기주차)','',''],
+ ['08:30→11:00','비엣젯 김해 → 다낭','✈',''],
+ ['12:00','입국 후 이름 피켓을 든 기사 미팅 → 더 나로드에 짐 맡기기','🚐 20분',''],
+ ['12:30','점심(반쎄오·미꽝·해산물), 미케비치 산책 → 14:00 체크인·휴식','🚶',''],
+ ['15:45~17:15','영흥사(린응사) 해수관음상, 손짜 반도 전망. 차량은 입구에서 대기(산 위는 그랩이 잘 안 잡힘)','🚐 25분','s'],
+ ['17:45~19:30','손짜 야시장 간식·해산물 저녁(18:00~자정) → 사랑의 다리·잉어상·용다리 야경(화요일은 불쇼 없음)','🚐 20분 → 🚶',''],
+ ['19:30~','호텔 복귀. 기운이 남으면 한강유람선(선택)','🚐/🚕','']
+],m:'첫날은 05:30에 시작합니다. 다음 날 바나힐, 그다음 날 06:20 기차가 있으니 무리하지 마세요.'},
+{d:'1/13 (수)',t:'바나힐 · 대성당·한시장 · 전신마사지',s:'더 나로드 다낭',r:[
+ ['07:45','조식 후 바나힐로. "호텔 왕복 + 관광 중 대기 + 귀환 때 대성당 하차"로 예약','🚐 50분',''],
+ ['08:45~14:15','케이블카 → 골든브릿지 먼저(아침에 사람이 적음) → 프랑스 마을·판타지파크 → 점심 뷔페 → 하산','🚶',''],
+ ['15:15~16:30','다낭대성당 외관 → 한시장(커피·기념품)','🚐 → 🚶 3분',''],
+ ['17:00~19:00','전신마사지 120분(팁 약 10만 동)','🚕/🚶',''],
+ ['19:30~','한강변 저녁(마담란 등) → 호텔. 일찍 자기(다음 날 06:20 출발)','🚕','s']
+],m:'바나힐 산 위는 더 춥습니다. 바람막이를 챙기고, 날씨에 따라 바꿀 수 있는 티켓을 고르세요.'},
+{d:'1/14 (목)',t:'후에 당일치기: 관광열차로 가고 전용차로 돌아오기',s:'더 나로드 다낭',r:[
+ ['06:20','호텔 → 다낭역(호텔 도시락 요청 가능 여부 확인)','🚕 15분',''],
+ ['07:05→11:03','HĐ2 관광열차. 진행 방향 오른쪽 좌석. 하이반 해안·랑꼬만, 랑꼬 10분 정차','🚆','s'],
+ ['11:10~12:15','후에역에서 전용차 기사 만남 → 분보후에 점심 → 왕궁','🚐',''],
+ ['12:30~14:20','후에 왕궁(오문·태화전 중심). 개별권 20만 동 + 열차표 할인 확인, 현장 가이드 동행','🚶','s'],
+ ['14:40~15:15','티엔무 사원','🚐',''],
+ ['15:40~16:30','카이딘 왕릉(15만 동). 16:30 입장 마감 전에 도착','🚐','s'],
+ ['16:30~19:00','카이딘 → 하이반 터널 → 더 나로드 하차','🚐 약 2.5시간',''],
+ ['19:30','다낭에서 저녁 → 휴식','🚕','']
+],m:'[선택 A] 여력이 있으면 카이딘 다음에 민망 황제릉(약 20분 거리)을 추가하세요. 귀환은 약 20:00이고 묶음권 42만 동을 삽니다. [선택 B] 기차를 좋아하면 돌아올 때 SE7(19:43 → 22:15)을 타고 후에에서 저녁을 먹습니다.'},
+{d:'1/15 (금)',t:'오행산 → 호이안 구시가지 · 야경 · 소원배',s:'호이안 히스토릭 호텔',r:[
+ ['09:30','더 나로드 체크아웃, 캐리어 4개 싣기(유일한 숙소 이동)','🚐',''],
+ ['10:00~11:15','오행산. 올라갈 때 엘리베이터, 사찰·동굴 위주. 정상까지 무리하지 않기','🚐 15분',''],
+ ['11:45','호이안 히스토릭 호텔에 짐 맡기기(차량 종료) → 점심(까오러우·반미)','🚐 30분 → 🚶','s'],
+ ['14:00','체크인, 휴식','',''],
+ ['15:30~17:45','구시가지(입장권 12만 동): 내원교·풍흥의 집·떤끼의 집·광조회관 + 씨클로 짧게','🚶',''],
+ ['18:00','저녁(까오러우·화이트로즈)','🚶',''],
+ ['19:30~20:00','소원배 + 소원등. 4명이 한 척(20만~22만 동, 선착장 게시가 확인)','🚶',''],
+ ['20:00~','안호이 야시장·등불 골목 → 호텔까지 걸어서','🚶','']
+],m:'후에에서 오래 이동하지 않으니 이전안보다 호이안 오후가 2시간 이상 여유롭습니다.'},
+{d:'1/16 (토)',t:'호이안 아침 · 바구니배 · 다낭 스파 · 용다리 불쇼 → 공항',s:'기내',r:[
+ ['07:30~10:00','조식 → 사람 적은 아침 구시가지·중앙시장·코코넛 커피','🚶',''],
+ ['10:30','체크아웃, 짐 싣기(공항까지 종일 차량)','🚐',''],
+ ['10:45~11:45','깜탄 코코넛숲 바구니배','🚐 15분',''],
+ ['12:00','점심(안방비치 또는 깜탄)','🚐',''],
+ ['13:00~16:00','다낭으로 이동 → 한시장이나 롯데마트에서 기념품 쇼핑(짐은 차에)','🚐 45분',''],
+ ['16:30~18:00','마사지 90분 + 샤워·환복(샤워 가능한 지점으로 예약)','🚐',''],
+ ['18:30','한강변 마지막 저녁','🚐/🚶',''],
+ ['20:45~21:10','사랑의 다리·잉어상 앞 → 21:00 용다리 불쇼(토요일 정기, 약 10분)','🚶','s'],
+ ['21:15→21:35','다낭 국제공항 출국장 하차, 수속(출발 약 3시간 전)','🚐 15~20분','']
+],m:'붐비거나 피곤하면 불쇼는 생략하고 20:40에 공항으로 출발하세요.'},
+{d:'1/17 (일)',t:'귀국',s:'',r:[['00:30→06:50','다낭 → 김해 → 창원','✈','']],m:''}
+];
+const e=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+document.getElementById('dayList').innerHTML=D.map(x=>`<div class="day"><div class="dh">${e(x.d)} <small>${e(x.t)}</small>${x.s?`<span class="stay">숙박: ${e(x.s)}</span>`:''}</div>
+<div class="tblwrap" style="border:0;border-radius:0"><table>${x.r.map(r=>`<tr${r[3]?' class="new"':''}><td class="tm2">${e(r[0])}</td><td>${e(r[1])}${r[3]?' <span class="tag tS">보완</span>':''}</td><td class="mv2">${e(r[2])}</td></tr>`).join('')}</table></div>
+${x.m?`<div class="memo">${e(x.m)}</div>`:''}</div>`).join('');
+</script>
+</body>
+</html>
